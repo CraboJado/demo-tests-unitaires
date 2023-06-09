@@ -13,7 +13,7 @@ public class SaisonTest extends TestCase {
 
     @Test
     public void testValueOfLibelleSaison() {
-        Saison s = Saison.valueOfLibelle("Printemps");
-        assertEquals(Saison.PRINTEMPS,s);
+        Saison s = Saison.valueOfLibelle("Eté");
+        assertEquals(Saison.ETE,s);
     }
 }
