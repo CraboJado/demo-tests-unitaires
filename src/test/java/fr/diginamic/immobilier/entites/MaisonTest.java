@@ -34,8 +34,18 @@ public class MaisonTest extends TestCase {
         assertEquals( 1,numPie );
     }
 //
-//    public void testSuperficieEtage() {
-//    }
+    public void testSuperficieEtage() {
+        Maison m = new Maison();
+        Chambre c = new Chambre(2,100);
+        Chambre c2 = new Chambre(2,200);
+        Cuisine cui = new Cuisine(1,200);
+        m.ajouterPiece(c);
+        m.ajouterPiece(c2);
+        m.ajouterPiece(cui);
+        double sup = m.superficieEtage(1);
+        assertEquals(200.0,sup);
+
+    }
 //
 //    public void testSuperficieTypePiece() {
 //    }
