@@ -60,6 +60,16 @@ public class MaisonTest extends TestCase {
         assertEquals(200.0,sup);
     }
 //
-//    public void testCalculerSurface() {
-//    }
+    public void testCalculerSurface() {
+        Maison m = new Maison();
+        Chambre c = new Chambre(2,100);
+        Chambre c2 = new Chambre(2,200);
+        Cuisine cui = new Cuisine(1,200);
+        m.ajouterPiece(c);
+        m.ajouterPiece(c2);
+        m.ajouterPiece(cui);
+
+        double sup = m.calculerSurface();
+        assertEquals(500.0,sup);
+    }
 }
