@@ -4,6 +4,7 @@ import junit.framework.TestCase;
 
 public class MaisonTest extends TestCase {
 
+
     public void testAjouterPiece() {
      Chambre c = new Chambre(1,100);
      Cuisine cui = new Cuisine(2,200);
@@ -25,8 +26,13 @@ public class MaisonTest extends TestCase {
 
     }
 
-//    public void testNbPieces() {
-//    }
+    public void testNbPieces() {
+        Maison m = new Maison();
+        Chambre c = new Chambre(1,100);
+        m.ajouterPiece(c);
+        int numPie = m.nbPieces();
+        assertEquals( 1,numPie );
+    }
 //
 //    public void testSuperficieEtage() {
 //    }
