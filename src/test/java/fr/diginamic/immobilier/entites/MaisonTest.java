@@ -22,7 +22,7 @@ public class MaisonTest extends TestCase {
 
      Piece[] psm = m.getPieces();
 
-     assertEquals(3,psm.length);
+     assertEquals(5,psm.length);
 
     }
 

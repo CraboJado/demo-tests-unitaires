@@ -24,7 +24,6 @@ public class Maison {
 		// On est obligé d'agrandir le tableau initial de 1 à chaque ajout
 		// d'une nouvelle pièce
 
-		if(pieces.length > 0 && nvPiece.getNumEtage() != pieces[0].getNumEtage()) return;
 
 		// On commence donc par créer un tableau temporaire appelé newTab
 		// qui a une taille égale à la tableau du tableau pieces+1
